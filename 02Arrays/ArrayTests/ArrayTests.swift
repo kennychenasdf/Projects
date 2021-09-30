@@ -52,7 +52,7 @@ class ArrayTests: XCTestCase {
         let input = [1,2,3,-1,-2,-4]
         let expected = 2
     
-        let result = tester.findPairsOfOpposites(nums: input)
+        let result = tester.findPairs(nums: input)
         
         XCTAssertEqual(result, expected, "\n Result: \"\(result)\" \n Expected: \"\(expected)\"")
     }
