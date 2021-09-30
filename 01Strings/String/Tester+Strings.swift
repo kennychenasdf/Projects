@@ -29,8 +29,14 @@ extension Tester {
     /// given a word, flip its characters, and print the result
     /// e.g. football -> llabtoof
     func flipWord(word: String) {
-        print(String(word.reversed()))
-    }
+            var sol = "";
+            for (i, _) in word.enumerated() {
+                
+                sol += (word.suffix(i+1).prefix(1))
+            }
+                    
+            print(String(sol))
+        }
     
     /// Using for-in-enumerated(), print odd-position chars in word
     func printOddCharsEnumerated(word: String) {
