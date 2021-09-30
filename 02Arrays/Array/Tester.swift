@@ -37,7 +37,7 @@ class Tester {
 
     /// 5. Write a function that returns the number of pairs of elements that sums up to 0
     /// Input [1,2,3,-1,-2,-4] -> Output 2
-    func findPairs(nums: [Int]) -> Int {
+    func findPairsOfOpposites(nums: [Int]) -> Int {
         1
     }
     
