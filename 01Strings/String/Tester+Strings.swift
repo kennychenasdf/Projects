@@ -60,6 +60,11 @@ extension Tester {
     
     /// Using loop and string.index, return true if input is a palindrome
     func isPalindrome(word: String) -> Bool {
-        return String(word.reversed()) == word
-    }
+            for (i, _) in word.enumerated(){
+                if(word.suffix(word.count-i).prefix(1) !=  word.suffix(i+1).prefix(1)){
+                    return false
+                }
+            }
+            return true
+        }
 }
